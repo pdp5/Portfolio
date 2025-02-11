@@ -1,0 +1,118 @@
+body {
+  background-color: black;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+header nav {
+  background-color: rgba(78, 77, 77, 0.179);
+  display: flex;
+  align-items: center;
+  padding: 20px 20px;
+  box-shadow: 0px 5px 15px rgba(255, 255, 255, 0.3);
+  font-size: x-large;
+  color: white;
+  justify-content: space-between;
+  position: fixed;
+  width: 100%;
+  box-sizing: border-box;
+  margin: 0;
+}
+header nav h3 {
+  margin: 0;
+}
+header nav .pages-container {
+  gap: 20px;
+  display: flex;
+}
+header nav .pages-container a {
+  color: rgba(255, 254, 254, 0.557);
+  text-decoration: none;
+}
+header nav .pages-container a:hover {
+  text-decoration: underline;
+  color: white;
+}
+main {
+  display: flex;
+  flex: 1;
+  /* background-color: aqua; */
+  justify-content: space-evenly;
+  align-items: center;
+  /* padding-top: 60px; */
+  /* box-sizing: border-box; */
+}
+main .picture-container {
+  border: solid 1px white;
+  color: white;
+}
+main .picture-container img {
+}
+main .about-me {
+  /* border: solid 1px white; */
+  color: white;
+  padding: 10px;
+  width: 40%;
+}
+main .about-me .name {
+  font-size: xxx-large;
+}
+main .about-me .profession {
+  margin: 0;
+  font-size: xx-large;
+}
+.profession::after {
+  content: "Software Engineer";
+  animation: changeText 10s infinite;
+}
+@keyframes changeText {
+  0%,
+  25% {
+    content: "Software Engineer";
+  }
+  26%,
+  50% {
+    content: "Front-End Developer";
+  }
+  51%,
+  75% {
+    content: "Back-End Developer";
+  }
+  76%,
+  100% {
+    content: "Full Stack Developer";
+  }
+}
+main .about-me .info {
+  margin: 10px 0;
+  /* background-color: aqua; */
+  font-size: x-large;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  background-color: rgba(78, 77, 77, 0.179);
+  box-shadow: 5px 0px 15px rgba(255, 255, 255, 0.5);
+  padding: 20px 20px;
+  display: flex;
+  width: 100%;
+  box-sizing: border-box;
+  justify-content: center;
+  align-items: center;
+}
+footer .container {
+  font-size: x-large;
+  gap: 20px;
+  display: flex;
+}
+footer .container a {
+  color: rgba(255, 254, 254, 0.557);
+  text-decoration: none;
+}
+footer .container a:hover {
+  text-decoration: underline;
+  color: white;
+}
