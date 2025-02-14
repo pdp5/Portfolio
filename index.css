@@ -5,6 +5,7 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+  min-width: 500px;
 }
 header nav {
   background-color: rgba(78, 77, 77, 0.179);
@@ -126,4 +127,41 @@ footer .container a {
 footer .container a:hover {
   text-decoration: underline;
   color: white;
+}
+/* @media only screen and (min-width: 1280px) {
+  main .about-me .name {
+    font-size: 4vw;
+  }
+  main .about-me .profession {
+    margin: 0;
+    font-size: 2vw;
+  }
+  main .about-me .info {
+    margin: 10px 0;
+
+    font-size: 1.5vw;
+  }
+  .quote blockquote {
+    font-size: 3vw;
+    margin-top: 100px;
+  }
+} */
+@media only screen and (max-width: 800px) {
+  main {
+    display: flex;
+    flex-direction: column;
+    /* flex: 1; */
+    /* background-color: aqua; */
+    justify-content: space-evenly;
+    align-items: center;
+    /* padding-top: 60px; */
+    /* box-sizing: border-box; */
+  }
+  main .about-me {
+    /* border: solid 1px white; */
+    color: white;
+    padding: 10px 20px;
+    width: 100%;
+    box-sizing: border-box;
+  }
 }
