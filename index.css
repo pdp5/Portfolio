@@ -66,6 +66,8 @@ main .picture-contanier {
 }
 main .picture-contanier img {
   clip-path: circle(50%);
+  filter: drop-shadow(10px 0px 10px rgba(249, 248, 248, 0.297))
+    drop-shadow(-10px 0px 10px rgba(249, 248, 248, 0.297));
 }
 main .about-me {
   /* border: solid 1px white; */
@@ -137,11 +139,16 @@ hr {
   margin-bottom: 20px;
   background: rgba(255, 255, 255, 0.05);
   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.5),
-    0 2px 6px rgba(255, 255, 255, 0.1) inset;
+    0 4px 10px rgba(255, 255, 255, 0.436) inset;
   backdrop-filter: blur(12px) saturate(180%);
   -webkit-backdrop-filter: blur(12px) saturate(180%);
   border: 1px solid rgba(255, 255, 255, 0.2);
   /* color: rgba(255, 254, 254, 0.557); */
+}
+#projects .ecommerce-site .thumbnail img {
+  /* transform: rotate(0.95turn); */
+  clip-path: xywh(0 5px 100% 75% round 15% 0);
+  width: 400px;
 }
 
 #projects .project-2 {
@@ -156,7 +163,7 @@ hr {
   margin-bottom: 20px;
   background: rgba(255, 255, 255, 0.05);
   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.5),
-    0 2px 6px rgba(255, 255, 255, 0.1) inset;
+    0 4px 10px rgba(255, 255, 255, 0.436) inset;
   backdrop-filter: blur(12px) saturate(180%);
   -webkit-backdrop-filter: blur(12px) saturate(180%);
   border: 1px solid rgba(255, 255, 255, 0.2);
@@ -173,7 +180,7 @@ hr {
   margin-bottom: 20px;
   background: rgba(255, 255, 255, 0.05);
   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.5),
-    0 2px 6px rgba(255, 255, 255, 0.1) inset;
+    0 4px 10px rgba(255, 255, 255, 0.436) inset;
   backdrop-filter: blur(12px) saturate(180%);
   -webkit-backdrop-filter: blur(12px) saturate(180%);
   border: 1px solid rgba(255, 255, 255, 0.2);
