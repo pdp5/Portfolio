@@ -338,7 +338,7 @@ footer .container a:hover {
   main .about-me .info {
     /* background-color: aquamarine; */
     padding: 10px 10px;
-    font-size: x-large;
+    font-size: larger;
     text-align: center;
   }
   footer {
