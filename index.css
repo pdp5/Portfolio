@@ -348,3 +348,44 @@ footer .container a:hover {
     font-size: larger;
   }
 }
+@media screen and (min-width: 431px) and (max-width: 769px) {
+  header nav {
+    font-size: xx-large;
+    padding: 20px 20px;
+  }
+  header nav .pages-container {
+    gap: 20px;
+  }
+  #home {
+    /* background-color: aqua; */
+    gap: 50px;
+  }
+  main .picture-contanier {
+    /* background-color: aqua; */
+    padding: 5px;
+    padding-left: 20px;
+  }
+  main .picture-contanier img {
+    height: 400px;
+  }
+  main {
+    display: flex;
+    gap: 5px;
+  }
+  main .about-me {
+    padding: 5px;
+    width: 380px;
+    /* background-color: antiquewhite; */
+    text-align: center;
+  }
+  footer {
+    padding: 20px 20px;
+  }
+  footer .container {
+    font-size: xx-large;
+  }
+  .quote {
+    font-size: xx-large;
+    text-align: center;
+  }
+}
