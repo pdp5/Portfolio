@@ -48,7 +48,7 @@ header nav .pages-container a:hover {
   height: 100vh;
   box-sizing: border-box;
 }
-section .quote {
+.quote {
   color: white;
   font-size: x-large;
   font-family: cursive;
@@ -212,40 +212,53 @@ footer .container a:hover {
   text-decoration: underline;
   color: white;
 }
-/* @media only screen and (min-width: 1280px) {
-  main .about-me .name {
-    font-size: 4vw;
+@media only screen and (min-width: 375px) {
+  body {
+    /* background-color: bisque; */
+    max-width: 375px;
+    min-width: 375px;
   }
-  main .about-me .profession {
-    margin: 0;
-    font-size: 2vw;
+  header nav {
+    font-size: medium;
+    padding: 10px 10px;
   }
-  main .about-me .info {
-    margin: 10px 0;
-
-    font-size: 1.5vw;
+  header nav .pages-container {
+    gap: 10px;
+    display: flex;
   }
-  .quote blockquote {
-    font-size: 3vw;
-    margin-top: 100px;
-  }
-} */
-@media only screen and (max-width: 800px) {
-  main {
+  #home main {
     display: flex;
     flex-direction: column;
-    /* flex: 1; */
     /* background-color: aqua; */
-    justify-content: space-evenly;
-    align-items: center;
-    /* padding-top: 60px; */
-    /* box-sizing: border-box; */
+  }
+  main .picture-contanier img {
+    height: 200px;
   }
   main .about-me {
-    /* border: solid 1px white; */
-    color: white;
-    padding: 10px 20px;
-    width: 100%;
-    box-sizing: border-box;
+    padding: 0;
+    /* max-width: 375px; */
+    width: 375px;
+  }
+  main .about-me .name {
+    font-size: xx-large;
+    text-align: center;
+  }
+  main .about-me .profession {
+    font-size: xx-large;
+    text-align: center;
+  }
+  main .about-me .info {
+    /* background-color: aquamarine; */
+    padding: 10px 10px;
+    font-size: large;
+    text-align: center;
+  }
+  .quote {
+    font-size: large;
+  }
+  footer .container {
+    font-size: medium;
+    gap: 10px;
+    display: flex;
   }
 }
