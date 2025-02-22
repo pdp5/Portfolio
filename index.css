@@ -5,7 +5,8 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-  min-width: 500px;
+  /* min-width: 500px; */
+  min-width: 100%;
 }
 header nav {
   /* background-color: rgba(78, 77, 77, 0.179); */
@@ -212,12 +213,7 @@ footer .container a:hover {
   text-decoration: underline;
   color: white;
 }
-@media only screen and (min-width: 375px) {
-  body {
-    /* background-color: bisque; */
-    max-width: 375px;
-    min-width: 375px;
-  }
+@media only screen and (max-width: 376px) {
   header nav {
     font-size: medium;
     padding: 10px 10px;
@@ -255,10 +251,100 @@ footer .container a:hover {
   }
   .quote {
     font-size: large;
+    text-align: center;
   }
   footer .container {
     font-size: medium;
     gap: 10px;
     display: flex;
+  }
+}
+@media only screen and (min-width: 376px) and (max-width: 415px) {
+  header nav {
+    font-size: larger;
+    padding: 10px 10px;
+  }
+
+  header nav .pages-container {
+    gap: 10px;
+    display: flex;
+  }
+  main .picture-contanier img {
+    height: 250px;
+  }
+  #home main {
+    display: flex;
+    flex-direction: column;
+    /* background-color: aqua; */
+  }
+  main .about-me {
+    padding: 0;
+    width: 410px;
+  }
+  main .about-me .name {
+    font-size: xx-large;
+    text-align: center;
+  }
+  main .about-me .profession {
+    font-size: xx-large;
+    text-align: center;
+  }
+  main .about-me .info {
+    /* background-color: aquamarine; */
+    padding: 10px 10px;
+    font-size: larger;
+    text-align: center;
+  }
+  .quote {
+    font-size: larger;
+    text-align: center;
+  }
+  footer .container {
+    font-size: larger;
+    gap: 10px;
+    display: flex;
+  }
+}
+@media screen and (min-width: 415px) and (max-width: 430px) {
+  header nav {
+    font-size: larger;
+    padding: 20px 10px;
+  }
+  header nav .pages-container {
+    gap: 10px;
+  }
+  #home main {
+    display: flex;
+    flex-direction: column;
+    /* background-color: aqua; */
+    width: 100%;
+  }
+  main .picture-contanier img {
+    height: 300px;
+  }
+  main .about-me {
+    padding: 0;
+    width: 410px;
+    /* background-color: antiquewhite; */
+  }
+  main .about-me .name {
+    font-size: xx-large;
+    text-align: center;
+  }
+  main .about-me .profession {
+    font-size: xx-large;
+    text-align: center;
+  }
+  main .about-me .info {
+    /* background-color: aquamarine; */
+    padding: 10px 10px;
+    font-size: x-large;
+    text-align: center;
+  }
+  footer {
+    padding: 20px 20px;
+  }
+  footer .container {
+    font-size: larger;
   }
 }
