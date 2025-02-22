@@ -305,7 +305,7 @@ footer .container a:hover {
     display: flex;
   }
 }
-@media screen and (min-width: 415px) and (max-width: 430px) {
+@media screen and (min-width: 415px) and (max-width: 431px) {
   header nav {
     font-size: larger;
     padding: 20px 10px;
