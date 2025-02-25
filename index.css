@@ -214,6 +214,9 @@ footer .container a:hover {
   color: white;
 }
 @media only screen and (max-width: 376px) {
+  #home {
+    height: 100vh;
+  }
   header nav {
     font-size: medium;
     padding: 10px 10px;
@@ -261,7 +264,7 @@ footer .container a:hover {
 }
 @media only screen and (min-width: 376px) and (max-width: 415px) {
   #home {
-    height: 100dvh;
+    height: 100vh;
   }
   header nav {
     font-size: larger;
@@ -310,7 +313,7 @@ footer .container a:hover {
 }
 @media screen and (min-width: 415px) and (max-width: 431px) {
   #home {
-    height: 100dvh;
+    height: 100vh;
   }
   header nav {
     font-size: larger;
