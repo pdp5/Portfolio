@@ -119,14 +119,65 @@ hr {
 }
 #projects {
   /* background-color: aquamarine; */
-  display: flex;
-  flex-direction: column;
+  /* display: flex;
+  flex-direction: column; */
   color: white;
-  padding-top: 50px;
+  padding-top: 0px;
+  /* padding-bottom: 50px; */
+  height: 100%;
+  /* background-color: aqua; */
+}
+#projects .projects {
+  /* display: flex;
+  flex-wrap: wrap; */
+  column-width: 370px;
+  /* background-color: aqua; */
 }
 #projects h1 {
   text-align: center;
   font-size: xxx-large;
+}
+.projects .project-01,
+.projects .project-02,
+.projects .project-03,
+.projects .project-04 {
+  width: 100%;
+  /* background-color: aqua; */
+  margin: 0;
+  padding: 0;
+}
+#projects .project-01 img:hover,
+#projects .project-02 img:hover,
+#projects .project-03 img:hover,
+#projects .project-04 img:hover,
+#projects .project-05 img:hover {
+  transform: scale(1.05);
+  filter: drop-shadow(5px 5px 10px white);
+}
+#projects .project-01 img {
+  height: 500px;
+  width: 100%;
+  filter: /*drop-shadow(5px 5px 10px white)*/ contrast(100%) saturate(2);
+}
+#projects .project-02 img {
+  height: 350px;
+  width: 100%;
+  filter: /*drop-shadow(5px 5px 10px white)*/ contrast(150%);
+}
+#projects .project-03 img {
+  height: 350px;
+  width: 100%;
+  filter: /*drop-shadow(5px 5px 10px white)*/ contrast(150%);
+}
+#projects .project-04 img {
+  height: 500px;
+  width: 100%;
+  filter: /*drop-shadow(5px 5px 10px white)*/ contrast(120%);
+}
+#projects .project-05 img {
+  height: 350px;
+  width: 100%;
+  filter: /*drop-shadow(5px 5px 10px white)*/ contrast(120%);
 }
 #projects .ecommerce-site {
   display: flex;
@@ -265,7 +316,7 @@ footer .container a:hover {
 @media only screen and (min-width: 376px) and (max-width: 415px) {
   #home {
     height: 100% - 10px;
-    background-color: aqua;
+    /* background-color: aqua; */
   }
   header nav {
     font-size: larger;
@@ -315,7 +366,7 @@ footer .container a:hover {
 @media screen and (min-width: 415px) and (max-width: 431px) {
   #home {
     height: 100% - 20px;
-    background-color: aqua;
+    /* background-color: aqua; */
   }
   header nav {
     font-size: larger;
@@ -368,8 +419,15 @@ footer .container a:hover {
     gap: 20px;
   }
   #home {
+    /* padding-top: 100% - 80px; */
     /* background-color: aqua; */
     gap: 50px;
+  }
+  #home main {
+    display: flex;
+    flex-direction: column;
+    /* background-color: aqua; */
+    width: 100%;
   }
   main .picture-contanier {
     /* background-color: aqua; */
@@ -382,16 +440,22 @@ footer .container a:hover {
   main {
     display: flex;
     gap: 5px;
+    padding-top: 150px;
   }
   main .about-me {
-    padding: 5px;
-    width: 380px;
+    margin: 5px;
+    width: 100%;
     /* background-color: antiquewhite; */
     text-align: center;
   }
-  footer {
-    padding: 20px 20px;
+  main .about-me .info {
+    /* background-color: rgb(163, 162, 161); */
+    padding: 5px 20px;
+    font-size: xx-large;
   }
+  /* footer {
+    padding: 20px 20px;
+  } */
   footer .container {
     font-size: xx-large;
   }
